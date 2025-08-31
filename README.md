@@ -1,4 +1,6 @@
 # AI-Powered E-commerce Image Generation
+[View the interactive workflow diagram here](https://honcyeung.github.io/AI-Powered-E-commerce-Image-Generation/)
+
 This repository provides an automated, AI-powered solution for generating and managing e-commerce product images. By leveraging Google's powerful imagen-3.0-generate-002 model, the system streamlines the creation of high-quality product visuals from simple text descriptions, and integrates with Google Cloud services for a robust and scalable image pipeline.
 
 ## Features
