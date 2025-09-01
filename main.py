@@ -14,11 +14,15 @@ if __name__ == "__main__":
     df2 = df.copy().dropna(subset = ["Details"])
     df2["unique_id"] = df2["Details"].apply(generate.create_hash_for_image)
     df2 = df2[df2["Category"] != "Indianwear-Women"]
+    # df2 = df2.sample(5)
 
     for i, row in df2.iterrows():
         details = row["Details"]
         category = row["Category"]
         unique_id = row["unique_id"]
+
+        # print(details)
+        # print()
 
         image = generate.run_generate_pipeline(details, category, unique_id)
         if image:

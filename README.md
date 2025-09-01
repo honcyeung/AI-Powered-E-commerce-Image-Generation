@@ -11,7 +11,7 @@ This repository provides an automated, AI-powered solution for generating and ma
 - **Modular Scripts:** The project is organized into modular Python scripts for easy management and execution of each step in the pipeline.
 
 ## Usage
-The project is broken down into several scripts that can be run independently or in a sequence.
+The project is broken down into several scripts that can be run in a sequence.
 - `main.py`: The primary entry point for the application. It orchestrates the entire workflow, from loading the data to generating, editing, and uploading the images.
 - `load.py`: Handles the initial data loading from data/FashionDataset.csv and prepares it for processing.
 - `generate.py`: Contains the logic to interact with the Google genai API and create new images based on the data.
