@@ -17,8 +17,6 @@ The project is broken down into several scripts that can be run independently or
 - `generate.py`: Contains the logic to interact with the Google genai API and create new images based on the data.
 - `edit.py`: Implements image processing functions to standardize and prepare the images for final output.
 - `display.py`: display the original and edit AI-generated images.
+
 To run the full pipeline, execute the main script:
 ```python main.py```
-
-You can also run individual scripts for specific tasks, for example:
-```python generate.py```
