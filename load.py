@@ -66,7 +66,3 @@ def run_load_pipeline():
     upload_images_to_gcs(LOCAL_EDITED_IMAGE_FOLDER, "edited_images")
     load_csv_to_bigquery()
 
-if __name__ == "__main__":
-    # upload_images_to_gcs(LOCAL_ORIGINAL_IMAGE_FOLDER, "original_images")
-    # upload_images_to_gcs(LOCAL_EDITED_IMAGE_FOLDER, "edited_images")
-    load_csv_to_bigquery()

@@ -65,7 +65,7 @@ def create_image_prompt_with_LLM(user_prompt, system_prompt):
 
         return
 
-def generate_product_image_prompt(details, category):
+def generate_image_prompt(details, category):
 
     system_prompt, user_prompt = get_prompt()
     user_prompt_updated = user_prompt.format(details = details, category = category)
@@ -73,10 +73,10 @@ def generate_product_image_prompt(details, category):
 
     return image_prompt
 
-def generate_product_image_with_LLM(details, category):
+def generate_image_with_LLM(details, category):
 
     try:
-        prompt = generate_product_image_prompt(details, category)
+        prompt = generate_image_prompt(details, category)
         print(prompt)
         client = genai.Client(
             vertexai = True, project = PROJECT_ID, location = LOCATION
@@ -125,7 +125,7 @@ def create_hash_for_image(details):
 
 def run_generate_pipeline(details, category, unique_id):
     
-    images = generate_product_image_with_LLM(details, category)
+    images = generate_image_with_LLM(details, category)
     save_image(images[0], unique_id)
 
     return images[0]
