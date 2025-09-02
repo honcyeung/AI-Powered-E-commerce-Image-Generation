@@ -8,7 +8,9 @@ import hashlib
 
 TEMPERATURE = 0.3
 GEMINI_TEXT_MODEL = "gemini-2.5-flash-lite" 
-GEMINI_IMAGE_MODEL = "imagen-3.0-generate-002"
+# GEMINI_IMAGE_MODEL = "imagen-3.0-generate-002"
+# GEMINI_IMAGE_MODEL = "imagen-4.0-generate-001"
+GEMINI_IMAGE_MODEL = "imagen-4.0-ultra-generate-001"
 IMAGE_PATH = "./images/"
 
 load_dotenv()

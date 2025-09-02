@@ -21,9 +21,6 @@ if __name__ == "__main__":
         category = row["Category"]
         unique_id = row["unique_id"]
 
-        # print(details)
-        # print()
-
         image = generate.run_generate_pipeline(details, category, unique_id)
         if image:
             image_enhanced = edit.run_edit_pipeline(unique_id)
